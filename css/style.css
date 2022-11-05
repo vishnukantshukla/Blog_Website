@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    user-select: none;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(36, 13, 13);
+    position: fixed;
+    top: 0;
+    padding: 5px 50px;
+
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav li {
+    padding: 10px;
+    font-size: 22px;
+}
+
+nav li:hover {
+    color: #19128e;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    color: #29d9d5;
+    font-size: 32px;
+    padding: 5px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #29d9d5;
+    border: 2px solid #29d9d5;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+    text-shadow: 0px 0px 3px cadetblue;
+
+}
+
+.book:hover {
+    background-color: cadetblue;
+    color: white;
+}
+
+main {
+    padding: 70px;
+}
+
+.p {
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.p h2 {
+    color: blue;
+    padding: 2px;
+}
+
+.p p {
+    color: black;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+
+}
+
+.cart {
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-position: center;
+    transition: 1s;
+}
+
+.cart:hover {
+    background-color: rgba(128, 128, 128, 0.571);
+    background-image: url("./images/cam.png");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    filter: grayscale(2);
+    cursor: pointer;
+}
+
+.c1 {
+    background-image: url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+.c2 {
+    background-image: url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+.c3 {
+    background-image: url("https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+.c4 {
+    background-image: url("https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+.c5 {
+    background-image: url("https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGxhbmRzY2FwZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+.c6 {
+    background-image: url("https://images.unsplash.com/photo-1413752362258-7af2a667b590?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGxhbmRzY2FwZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+.room {
+    /* height: 50vh; */
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1455218873509-8097305ee378?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px 100px;
+}
+
+.room h3 {
+    color: #29d9d5;
+    font-size: 30px;
+    padding: 20px;
+    text-shadow: 0px 0px 3px cadetblue;
+}
+
+.room h1 {
+    font-size: 70px;
+    text-shadow: 2px 2px 3px black;
+}
+
+.room p {
+    text-align: center;
+    padding: 10px;
+    opacity: .7;
+}
+
+footer {
+    /* height: 50vh; */
+    background-color: rgb(36, 13, 13);
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 70px 20px;
+}
+
+.photos,
+.contact,
+.information {
+    width: 400px;
+    padding: 10px 20px;
+    font-size: 22px;
+}
+
+.photos h3,
+.contact h3,
+.information h3 {
+    padding: 20px;
+}
+
+.photos p,
+.contact p,
+.information p {
+    padding: 10px;
+    opacity: .7;
+}
+
+.information input {
+    width: 300px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #29d9d5;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 0px;
+}
